@@ -1,0 +1,40 @@
+.products{
+    margin-top: 150px;
+    .products_h1_title{
+        width: 100%;
+        color: #252158;
+        font-size: 34px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: -1px;
+    }
+
+    .products_p_more{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: #666666;
+        font-size: 15px;
+        cursor: pointer;
+
+        img{
+            height: 10px;
+            margin-left: 5px;
+        }
+    }
+
+    .products_itens{
+        width: 100%;
+
+        .products_card{
+            width: 25%;
+
+            .product_img{
+                height: 310px;
+                width: 300px;
+                background-color: #666666;
+            }
+        }
+    }
+}

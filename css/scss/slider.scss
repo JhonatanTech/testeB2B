@@ -1,0 +1,15 @@
+.slider{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(135, 135, 135);
+
+    .slider_div_item{
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .slider_span_banner{
+        width: 100%;
+    }
+}
