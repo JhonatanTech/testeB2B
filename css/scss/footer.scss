@@ -1,0 +1,89 @@
+.footer{
+    background-color: #1d182d;
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        padding-top: 40px;
+        justify-content: space-around;
+
+        .footer_welcome{
+            width: 33%;
+            padding: 20px 60px 0 0;
+            
+            .welcome_p_text{
+                color: #fff;
+                font-size: 16px;
+                text-align: justify;
+                margin-top: 20px;
+            }
+        }
+
+        .footer_links{
+            width: 33%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+
+            .links_div_container{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                align-content: center;
+                align-items: flex-start;
+                justify-content: space-evenly;
+
+                .links_p_title{
+                    color: #72bf44;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+
+                .links_a_text{
+                    width: 100%;
+                    color: #fff;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    margin-bottom: 8px;
+
+                    .links_img_icon{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .footer_social{
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            align-content: flex-end;
+            align-items: flex-end;
+
+            .social_img_facebook{
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 10px;
+            }
+            .social_icons{
+                display: flex;
+                width: 100%;
+                max-width: 300px;
+
+                .social_a_link{
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 15px;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

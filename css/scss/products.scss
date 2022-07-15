@@ -1,5 +1,6 @@
 .products{
-    margin-top: 150px;
+    margin: 100px auto;
+
     .products_h1_title{
         width: 100%;
         color: #252158;
@@ -26,15 +27,78 @@
 
     .products_itens{
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
 
         .products_card{
-            width: 25%;
+            width: 24%;
+            padding-bottom: 5px;
+            margin: 10px 0;
 
             .product_img{
                 height: 310px;
-                width: 300px;
-                background-color: #666666;
+                width: 100%;
+                background-color: #666;
             }
+
+            .product_info{
+
+                .product_p_name{
+                    color: #666;
+                    margin: 20px 0;
+                    text-align: center;
+                }
+
+                .products_price{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .products_p_old{
+                        color: #666;
+                        text-decoration: line-through;
+                    }
+                    .products_p_new{
+                        color: #252158;
+                        font-weight: bold;
+                        font-size:25px;
+                        margin-left: 5px;
+                    }
+                }
+
+                .product_p_installment{
+                    width: 100%;
+                    color: #666;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+
+            .products_a_button{
+                display: flex;
+                margin: 0 10px;
+                background-color: #72bf44;
+                color: #252158;
+                font-size: 22px;
+                font-weight: bolder;
+                justify-content: center;
+                text-transform: uppercase;
+                padding: 5px 0;
+                margin: 10px;
+                border-radius: 5px;
+                letter-spacing: 1px;
+                opacity: 0;
+            }
+        }
+        .products_card:hover{
+            transform: scale(1.02);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.47);
+        }
+
+        .products_card:hover .products_a_button{
+            opacity: 1;
         }
     }
 }
