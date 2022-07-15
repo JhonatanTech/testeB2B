@@ -6,7 +6,7 @@ const concat = require('gulp-concat')
 var csso = require('gulp-csso');
 
 function buildStyles() {
-    return gulp.src('css/scss/*.scss')
+    return gulp.src('css/scss/**/*.scss')
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(csso())
@@ -16,7 +16,7 @@ function buildStyles() {
 exports.buildStyles = buildStyles
 
 function watch() {
-    gulp.watch('css/scss/*.scss', buildStyles)
+    gulp.watch('css/scss/**/*.scss', buildStyles)
 }
 exports.watch = watch
 
